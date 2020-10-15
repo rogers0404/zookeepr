@@ -11,6 +11,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+app.use(express.static('public'));    //I need to do this in order to load the file in Express.js
 
 /* function filterByQuery(query, animalsArray) {
   let filteredResults = animalsArray;
